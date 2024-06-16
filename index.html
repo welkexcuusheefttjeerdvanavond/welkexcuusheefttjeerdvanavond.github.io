@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willekeurige Tjeerd Excuus Generator</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+        #excuse {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e5533d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willekeurige Excuus voor Tjeerd</h1>
+        <p id="excuse"></p>
+        <button class="btn" onclick="generateExcuse()">Nieuwe Excuus</button>
+    </div>
+
+
+    <script>
+        const excuses = [
+            "Tjeerd voelt zich vandaag niet lekker.",
+            "Tjeerd heeft een familie noodgeval.",
+            "Tjeerd heeft een dringende afspraak.",
+            "Tjeerd staat vast in het verkeer.",
+            "Het internet van Tjeerd is uitgevallen.",
+            "Tjeerd moet een belangrijke deadline halen.",
+            "Tjeerd is niet in de stad.",
+            "Tjeerd moet persoonlijke zaken regelen.",
+            "Tjeerd helpt een vriend in nood.",
+            "Tjeerd heeft technische problemen."
+        ];
+
+
+        function getRandomExcuse() {
+            const randomIndex = Math.floor(Math.random() * excuses.length);
+            return excuses[randomIndex];
+        }
+
+
+        function generateExcuse() {
+            document.getElementById('excuse').innerText = getRandomExcuse();
+        }
+
+
+        // Generate a random excuse on initial load
+        generateExcuse();
+    </script>
+</body>
+</html>
