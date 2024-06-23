@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
@@ -56,7 +56,6 @@
         <button class="btn" onclick="generateExcuse()">Nieuw Excuus</button>
     </div>
 
-
     <script>
         const excuses = [
             "Tjeerd voelt zich vandaag niet lekker.",
@@ -68,20 +67,118 @@
             "Tjeerd is niet in de stad.",
             "Tjeerd moet persoonlijke zaken regelen.",
             "Tjeerd helpt een vriend in nood.",
-            "Tjeerd heeft technische problemen."
+            "Tjeerd heeft technische problemen.",
+            "Tjeerd gaat trainen voor de halve marathon in Rotterdam.",
+            "Tjeerd leert stucen tijdens een workshop in het lokale buurthuis.",
+            "Tjeerd helpt zwangere cavia's bevallen bij de dierenopvang.",
+            "Tjeerd zet een triatlon uit in het natuurgebied bij het meer.",
+            "Tjeerd gaat kitesurfen op de Brouwersdam.",
+            "Tjeerd doet mee aan een vroege yogasessie bij zonsopgang op het strand.",
+            "Tjeerd volgt workshops houtbewerking bij de ambachtsschool.",
+            "Tjeerd doet vrijwilligerswerk bij de voedselbank.",
+            "Tjeerd gaat bergbeklimmen in de Ardennen tijdens een weekendje weg.",
+            "Tjeerd volgt salsadansles in de lokale dansstudio.",
+            "Tjeerd vliegt in een luchtballon boven de Veluwe.",
+            "Tjeerd volgt een fotografiecursus bij de kunstacademie.",
+            "Tjeerd leert scubaduiken in een zwembad voor beginners.",
+            "Tjeerd helpt mee bij de lokale boerenmarkt op zondagochtend.",
+            "Tjeerd bakt pizza in een houtoven tijdens een kookworkshop.",
+            "Tjeerd bereidt een stand-up comedy optreden voor de open mic avond voor.",
+            "Tjeerd plant een weekendreis naar een onbekende stad met de trein.",
+            "Tjeerd speelt schaken tegen grootmeesters tijdens een schaaktoernooi.",
+            "Tjeerd volgt een cursus Italiaans voor beginners aan de volksuniversiteit.",
+            "Tjeerd legt een moestuin aan en onderhoudt deze in de volkstuinvereniging.",
+            "Tjeerd gaat geocachen in het bos bij het natuurreservaat.",
+            "Tjeerd doet vrijwilligerswerk in een dierenasiel op donderdagavond.",
+            "Tjeerd regisseert een theaterstuk met de lokale amateurgroep.",
+            "Tjeerd gaat open water zwemmen in het meer bij het recreatiepark.",
+            "Tjeerd organiseert een boekclub bijeenkomst met vrienden.",
+            "Tjeerd volgt een astronomiecursus in het planetarium.",
+            "Tjeerd kookt voor een goed doel tijdens een benefietdiner.",
+            "Tjeerd doet mee aan een mud run in de modderige weilanden.",
+            "Tjeerd gaat paragliden vanaf de heuvels in Zuid-Limburg.",
+            "Tjeerd gaat kanoën op de rivier bij de kanovereniging.",
+            "Tjeerd bezoekt een klimbos met vrienden voor een avontuurlijk dagje uit.",
+            "Tjeerd organiseert een jazzfestival in het stadspark.",
+            "Tjeerd volgt een fotoworkshop in een natuurpark tijdens de herfst.",
+            "Tjeerd pimpt en renoveert caravans voor de zomervakantie.",
+            "Tjeerd organiseert een winterse BBQ in de achtertuin met vuurkorven.",
+            "Tjeerd spot vogels in een natuurreservaat met een vogelgids.",
+            "Tjeerd volgt een schildercursus bij het kunstcentrum.",
+            "Tjeerd loopt voor KWF tijdens de jaarlijkse sponsorloop.",
+            "Tjeerd helpt mee bij een moestuinproject op de basisschool.",
+            "Tjeerd organiseert een buurtfeest met muziek en spelletjes.",
+            "Tjeerd bezoekt een kunstmuseum tijdens een speciale tentoonstelling.",
+            "Tjeerd kookt met wildpluk tijdens een workshop in het bos.",
+            "Tjeerd leert skateboarden in het skatepark.",
+            "Tjeerd opent een pop-up restaurant in het lokale buurthuis.",
+            "Tjeerd geeft een bootcamp in het park met een groep vrienden.",
+            "Tjeerd gaat suppen op een meer bij de watersportvereniging.",
+            "Tjeerd helpt vrienden verhuizen naar hun nieuwe huis.",
+            "Tjeerd leert pottenbakken in een keramiekatelier.",
+            "Tjeerd volgt een bierbrouwers workshop bij een lokale brouwerij.",
+            "Tjeerd gaat hiken in de bergen.",
+            "Tjeerd gaat trainen voor een 75K-loop.",
+            "Tjeerd doet mee aan een fietstocht van 600 kilometer.",
+            "Tjeerd schildert een muurschildering in de kinderopvang.",
+            "Tjeerd bakt brood in een traditionele bakkerij.",
+            "Tjeerd volgt een koffieworkshop in een gespecialiseerde koffiezaak.",
+            "Tjeerd volgt een schrijfworkshop voor het schrijven van korte verhalen.",
+            "Tjeerd helpt mee bij de organisatie van een muziekfestival.",
+            "Tjeerd bakt taarten voor een liefdadigheidsverkoop.",
+            "Tjeerd helpt bij het opzetten van een kunsttentoonstelling.",
+            "Tjeerd organiseert een fotografie-expositie.",
+            "Tjeerd doet mee aan een stadswandeling met historische uitleg.",
+            "Tjeerd verzamelt plastic afval op het strand.",
+            "Tjeerd onderhoudt de stadsmoestuin met buurtbewoners.",
+            "Tjeerd maakt kerstversiering voor een goed doel.",
+            "Tjeerd volgt paaldanslessen voor beginners.",
+            "Tjeerd organiseert een zondagse brunch voor vrienden.",
+            "Tjeerd organiseert een kampeerweekend in een natuurgebied.",
+            "Tjeerd doet mee aan een nachtelijke sterrenkijkexcursie in een open veld.",
+            "Tjeerd gaat met zijn twee katjes spelen.",
+            "Tjeerd doet vrijwilligerswerk bij een sportevenement.",
+            "Tjeerd tuiniert in de gemeenschappelijke tuin van de flat.",
+            "Tjeerd helpt mee met de bouw van een speeltuin.",
+            "Tjeerd volgt een nordic walking training in het park.",
+            "Tjeerd vertelt verhalen bij de bibliotheek.",
+            "Tjeerd organiseert een speurtocht voor kinderen in de wijk.",
+            "Tjeerd volgt een glas-in-lood workshop.",
+            "Tjeerd doet mee aan een amateur schaaktoernooi.",
+            "Tjeerd bezoekt en helpt bij een vintage kledingmarkt.",
+            "Tjeerd bouwt een boot bij een doe-het-zelf workshop.",
+            "Tjeerd schildert keramiek in een lokaal atelier.",
+            "Tjeerd volgt een kookcursus gericht op vegetarische gerechten.",
+            "Tjeerd volgt een origami workshop in een cultuurcentrum.",
+            "Tjeerd start een blog over avontuurlijke activiteiten.",
+            "Tjeerd heeft dan bezoekuur als leerling mentor voor studenten in nood.",
+            "Tjeerd coacht een jeugdvoetbalteam.",
+            "Tjeerd volgt een schrijfworkshop voor het schrijven van reisverhalen.",
+            "Tjeerd maakt tuinmeubelen van pallethout.",
+            "Tjeerd organiseert een salsamuziekavond in een lokaal café.",
+            "Tjeerd herstelt een oude fiets in een reparatiewerkplaats.",
+            "Tjeerd doet mee aan een whiskyproeverij.",
+            "Tjeerd volgt een DJ workshop bij een muziekschool.",
+            "Tjeerd organiseert een openluchtbioscoop in de zomer.",
+            "Tjeerd bouwt een bijenhotel in de achtertuin.",
+            "Tjeerd doet mee aan een winterwandeling met gids in een natuurpark.",
+            "Tjeerd doet mee aan een pubquizavond.",
+            "Tjeerd volgt een cursus linosnijden.",
+            "Tjeerd organiseert een herfstpicknick in het bos.",
+            "Tjeerd geeft een spinningles in de sportschool.",
+            "Tjeerd helpt bij het restaureren van een oud monument.",
+            "Tjeerd organiseert kinderactiviteiten tijdens een buurtfeest.",
+            "Tjeerd doet mee aan een lokale triatlon als vrijwilliger."
         ];
-
 
         function getRandomExcuse() {
             const randomIndex = Math.floor(Math.random() * excuses.length);
             return excuses[randomIndex];
         }
 
-
         function generateExcuse() {
             document.getElementById('excuse').innerText = getRandomExcuse();
         }
-
 
         // Generate a random excuse on initial load
         generateExcuse();
